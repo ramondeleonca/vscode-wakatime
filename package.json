@@ -1,7 +1,7 @@
 {
-  "name": "vscode-wakatime",
-  "displayName": "WakaTime",
-  "description": "Metrics, insights, and time tracking automatically generated from your programming activity.",
+  "name": "vscode-wakatime-2",
+  "displayName": "WakaTime 2",
+  "description": "2nd Instance for WakaTime: Metrics, insights, and time tracking automatically generated from your programming activity.",
   "version": "25.0.3",
   "publisher": "WakaTime",
   "author": {
@@ -72,55 +72,55 @@
   "contributes": {
     "commands": [
       {
-        "command": "wakatime.apikey",
+        "command": "wakatime2.apikey",
         "title": "WakaTime: Api Key"
       },
       {
-        "command": "wakatime.apiurl",
+        "command": "wakatime2.apiurl",
         "title": "WakaTime: Api Url"
       },
       {
-        "command": "wakatime.proxy",
+        "command": "wakatime2.proxy",
         "title": "WakaTime: Proxy"
       },
       {
-        "command": "wakatime.debug",
+        "command": "wakatime2.debug",
         "title": "WakaTime: Debug"
       },
       {
-        "command": "wakatime.disable",
+        "command": "wakatime2.disable",
         "title": "WakaTime: Disable/Enable Extension"
       },
       {
-        "command": "wakatime.status_bar_enabled",
+        "command": "wakatime2.status_bar_enabled",
         "title": "WakaTime: Status Bar Enabled"
       },
       {
-        "command": "wakatime.status_bar_coding_activity",
+        "command": "wakatime2.status_bar_coding_activity",
         "title": "WakaTime: Status Bar Coding Activity"
       },
       {
-        "command": "wakatime.dashboard",
+        "command": "wakatime2.dashboard",
         "title": "WakaTime: Open Dashboard"
       },
       {
-        "command": "wakatime.config_file",
+        "command": "wakatime2.config_file",
         "title": "WakaTime: Open Config File..."
       },
       {
-        "command": "wakatime.log_file",
+        "command": "wakatime2.log_file",
         "title": "WakaTime: Open Log File..."
       }
     ],
     "configuration": {
-      "title": "WakaTime",
+      "title": "WakaTime 2",
       "properties": {
-        "wakatime.apiKey": {
+        "wakatime2.apiKey": {
           "type": "string",
-          "description": "Defaults to value from ~/.wakatime.cfg, unless running in browser.",
+          "description": "Defaults to value from ~/.wakatime2.cfg, unless running in browser.",
           "scope": "application"
         },
-        "wakatime.apiUrl": {
+        "wakatime2.apiUrl": {
           "type": "string",
           "description": "Defaults to https://api.wakatime.com/api/v1.",
           "scope": "application"
