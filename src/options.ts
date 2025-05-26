@@ -22,9 +22,9 @@ export class Options {
 
   constructor(logger: Logger, resourcesFolder: string) {
     this.logger = logger;
-    this.configFile = path.join(Desktop.getHomeDirectory(), '.wakatime.cfg');
-    this.internalConfigFile = path.join(resourcesFolder, 'wakatime-internal.cfg');
-    this.logFile = path.join(resourcesFolder, 'wakatime.log');
+    this.configFile = path.join(Desktop.getHomeDirectory(), '.wakatime2.cfg');
+    this.internalConfigFile = path.join(resourcesFolder, 'wakatime2-internal.cfg');
+    this.logFile = path.join(resourcesFolder, 'wakatime2.log');
   }
 
   public async getSettingAsync<T = any>(section: string, key: string): Promise<T> {
@@ -281,18 +281,18 @@ export class Options {
   }
 
   public getApiKeyFromEditor(): string {
-    return vscode.workspace.getConfiguration().get('wakatime.apiKey') || '';
+    return vscode.workspace.getConfiguration().get('wakatime2.apiKey') || '';
   }
 
   private getApiUrlFromEditor(): string {
-    return vscode.workspace.getConfiguration().get('wakatime.apiUrl') || '';
+    return vscode.workspace.getConfiguration().get('wakatime2.apiUrl') || '';
   }
 
   // Support for gitpod.io https://github.com/wakatime/vscode-wakatime/pull/220
   public getApiKeyFromEnv(): string {
     if (this.cache.api_key_from_env !== undefined) return this.cache.api_key_from_env;
 
-    this.cache.api_key_from_env = process.env.WAKATIME_API_KEY || '';
+    this.cache.api_key_from_env = process.env.WAKATIME2_API_KEY || '';
 
     return this.cache.api_key_from_env;
   }
