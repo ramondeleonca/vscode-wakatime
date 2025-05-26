@@ -23,8 +23,8 @@ export class Desktop {
     const options = {
       windowsHide: true,
     };
-    if (!this.isWindows() && !process.env.WAKATIME_HOME && !process.env.HOME) {
-      options['env'] = { ...process.env, WAKATIME_HOME: this.getHomeDirectory() };
+    if (!this.isWindows() && !process.env.WAKATIME2_HOME && !process.env.HOME) {
+      options['env'] = { ...process.env, WAKATIME2_HOME: this.getHomeDirectory() };
     }
     return options;
   }
