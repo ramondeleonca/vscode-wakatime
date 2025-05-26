@@ -1,4 +1,8 @@
-# WakaTime for Visual Studio Code
+# WakaTime for Visual Studio Code - 2nd instance
+
+## DO NOT USE THIS IF YOU DON'T KNOW WHAT THIS IS.
+
+### This is literally WakaTime with some things renamed to WakaTime 2 so i could use 2 wakatime APIs
 
 [![Version](https://img.shields.io/visual-studio-marketplace/v/WakaTime.vscode-wakatime.png?style=flat-square&color=007ec6&label=marketplace)](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)
 [![Installs](https://img.shields.io/visual-studio-marketplace/i/WakaTime.vscode-wakatime.png?style=flat-square&color=007ec6)](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)
